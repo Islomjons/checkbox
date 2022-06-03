@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: red;
+}
+
+.container {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox__list {
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    display: none;
+}
+
+.input__item {
+    position: relative;
+    width: 200px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffff;
+    border-radius: 5px;
+    background-color: #ffff;
+    margin-right: 25px;
+    transition: 0.3s ease;
+}
+
+input:checked + .input__item {
+    border: 2px solid black;
+    background-image: url(./../images/tick.png);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 14px 14px;
+}
+
+.input__item:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    display: inline-block;
+    border: 2px solid dodgerblue;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.basket-img {
+    margin-bottom: 20px;
+}
+
+.checkbox__text {
+    margin: 0;
+    font-family: sans-serif;
+}
+
